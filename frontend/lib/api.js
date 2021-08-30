@@ -5,7 +5,7 @@ export const getStrapiURL = (path = '') => {
 };
 
 // Helper to make GET requests to Strapi
-export const fetchApi = async (path) => {
+export const fetchAPI = async (path) => {
   const requestUrl = getStrapiURL(path);
   const response = await fetch(requestUrl);
   const data = await response.json();
