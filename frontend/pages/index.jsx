@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Layout from '../components/Layout';
+import { Layout, Seo } from '../components';
 import { fetchAPI } from '../lib/api';
 
 const Home = ({ articles, categories, homepage }) => {
   return (
     <>
-      <Layout categories={categories} />
+      <Layout categories={categories}>
+        <Seo seo={homepage.seo} />
+      </Layout>
     </>
   );
 };
