@@ -3,7 +3,7 @@ import App from 'next/app';
 import Head from 'next/head';
 import { getStrapiMedia } from '../lib/media';
 import { fetchAPI } from '../lib/api';
-import '../styles/globals.css';
+import '../assets/css/styles.css';
 
 export const GlobalContext = createContext({});
 
